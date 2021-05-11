@@ -13,8 +13,16 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ListView lvCarros;
+    private ArrayAdapter adapter;
+    private List<Carro> listaCarros;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        lvCarros = findViewById(R.id.lvCarros);
+
+        carregarCarros();
+    }
+
+    private void carregarCarros(){
+        listaCarros = CarroDAO.getCarros(this);
+        adapter  = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaCarros);
+        lvCarros.setAdapter(adapter);
     }
 
     @Override
