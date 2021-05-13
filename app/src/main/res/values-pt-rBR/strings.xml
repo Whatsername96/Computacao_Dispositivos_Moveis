@@ -56,4 +56,11 @@
         <item>Volkswagen</item>
     </string-array>
 
+    <string name="txtAtencao">Atenção</string>
+    <string name="txtConfirmacao">Confirma a exclusão do carro</string>
+    <string name="txtCancelar">Cancelar</string>
+    <string name="txtSim">Sim</string>
+
+    <string name="txtToast">Todos os campos devem ser preenchidos</string>
+
 </resources>

@@ -56,4 +56,11 @@
         <item>Volkswagen</item>
     </string-array>
 
+    <string name="txtAtencao">Attention</string>
+    <string name="txtConfirmacao">Confirms the deletion of the car</string>
+    <string name="txtCancelar">Cancel</string>
+    <string name="txtSim">Yes</string>
+    
+    <string name="txtToast">All fields must be filled</string>
+
 </resources>

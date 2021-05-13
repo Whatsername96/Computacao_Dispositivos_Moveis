@@ -6,9 +6,9 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <ListView
+        android:background="#BCBCBC"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/lvCarros">
-    </ListView>
+        android:id="@+id/lvCarros"/>
 
 </LinearLayout>
