@@ -56,9 +56,9 @@ public class AdapterCarros extends BaseAdapter {
         }
 
         Carro carro = carroList.get(position);
-        item.tvModelo.setText("Modelo: " + carro.getModelo());
-        item.tvMontadora.setText("Montadora: " + carro.getMontadora());
-        item.tvAno.setText("Ano: " + String.valueOf(carro.getAno()));
+        item.tvModelo.setText( context.getString(R.string.txtListaModelo) + " " + carro.getModelo());
+        item.tvMontadora.setText(context.getString(R.string.txtListaMontadora) + " " +carro.getMontadora());
+        item.tvAno.setText(context.getString(R.string.txtListaAno) + " " + String.valueOf(carro.getAno()));
 
         if( position % 2 == 0){
             item.layout.setBackgroundColor(Color.rgb(150, 150, 150));
