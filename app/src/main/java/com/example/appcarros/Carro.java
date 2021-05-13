@@ -1,9 +1,10 @@
 package com.example.appcarros;
 
+import android.content.res.Resources;
+
 public class Carro {
 
     public static final int ANO_MINIMO = 2000;
-
     private int id;
     private String modelo, montadora;
     private int ano;
@@ -61,6 +62,11 @@ public class Carro {
 
     @Override
     public String toString() {
-        return id + " | " + modelo + " - " + montadora + " - " + ano;
+
+        return  "\n" + modelo +
+                "\n" + montadora +
+                "\n" + ano +
+                "\n" + id  +
+                "\n";
     }
 }

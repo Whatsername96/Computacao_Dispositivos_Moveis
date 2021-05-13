@@ -80,18 +80,19 @@ public class FormularioActivity extends AppCompatActivity {
                 carro.setModelo(etModelo.getText().toString());
                 carro.setMontadora(spMontadora.getSelectedItem().toString());
                 carro.setAno(Integer.valueOf(spAno.getSelectedItem().toString()));
-            }
-        if(acao.equals("editar")){
-            CarroDAO.editar(carro, this);
-            finish();
 
-        }else{
-            if(acao.equals("novo")) {
-                CarroDAO.inserir(carro, this);
-                etModelo.setText("");
-                spMontadora.setSelection(0);
-                spAno.setSelection(0);
+                if (acao.equals("editar")) {
+                    CarroDAO.editar(carro, this);
+                    finish();
+
+                } else {
+                    if (acao.equals("novo")) {
+                        CarroDAO.inserir(carro, this);
+                        etModelo.setText("");
+                        spMontadora.setSelection(0);
+                        spAno.setSelection(0);
+                    }
+                }
             }
-        }
     }
 }

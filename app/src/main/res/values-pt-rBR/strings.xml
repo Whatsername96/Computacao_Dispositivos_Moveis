@@ -63,4 +63,9 @@
 
     <string name="txtToast">Todos os campos devem ser preenchidos</string>
 
+    <string name="txtListaModelo">Modelo:</string>
+    <string name="txtListaMontadora">Montadora:</string>
+    <string name="txtListaAno">Ano:</string>
+    <string name="txtListaId">Id:</string>
+
 </resources>

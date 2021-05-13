@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,7 +15,6 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.List;
@@ -24,7 +22,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lvCarros;
-    private ArrayAdapter adapter;
+    private AdapterCarros adapter;
     private List<Carro> listaCarros;
 
     @Override
@@ -101,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void carregarCarros(){
         listaCarros = CarroDAO.getCarros(this);
-        adapter  = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaCarros);
+        adapter = new AdapterCarros(this, listaCarros);
         lvCarros.setAdapter(adapter);
     }
 

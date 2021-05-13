@@ -63,4 +63,9 @@
     
     <string name="txtToast">All fields must be filled</string>
 
+    <string name="txtListaModelo">Model:</string>
+    <string name="txtListaMontadora">Assembler:</string>
+    <string name="txtListaAno">Year:</string>
+    <string name="txtListaId">Id:</string>
+
 </resources>

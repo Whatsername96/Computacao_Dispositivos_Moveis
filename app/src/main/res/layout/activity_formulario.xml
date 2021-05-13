@@ -32,7 +32,7 @@
         android:hint="@string/textModelo"
         android:paddingLeft="10dp"
         android:inputType="textPersonName"
-        android:textColor="#000000"
+        android:textColor="#FFF"
         android:textColorHint="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
