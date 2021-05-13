@@ -57,7 +57,7 @@
     </string-array>
 
     <string name="txtAtencao">Atenção</string>
-    <string name="txtConfirmacao">Confirma a exclusão do carro</string>
+    <string name="txtConfirmacao">"Confirma a exclusão do carro</string>
     <string name="txtCancelar">Cancelar</string>
     <string name="txtSim">Sim</string>
 

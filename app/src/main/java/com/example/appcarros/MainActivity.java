@@ -75,10 +75,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void excluirCarro(Carro carro){
+
         AlertDialog.Builder alerta = new AlertDialog.Builder(this);
         alerta.setIcon(android.R.drawable.ic_input_delete);
         alerta.setTitle(R.string.txtAtencao);
-        alerta.setMessage(R.string.txtConfirmacao + carro.getModelo() + "?");
+        alerta.setMessage(getString(R.string.txtConfirmacao) + " " + carro.getModelo() + "?");
+
         alerta.setNeutralButton(R.string.txtCancelar, null);
         alerta.setPositiveButton(R.string.txtConfirmacao, new DialogInterface.OnClickListener() {
             @Override

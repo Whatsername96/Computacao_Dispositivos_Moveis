@@ -24,7 +24,7 @@ public class CarroDAO {
 
     public static void editar(Carro carro, Context context){
         ContentValues valores = new ContentValues();
-        valores.put("modelo", carro.getMontadora());
+        valores.put("modelo", carro.getModelo());
         valores.put("montadora", carro.getMontadora());
         valores.put("ano", carro.getAno());
 

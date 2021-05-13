@@ -49,7 +49,7 @@ public class FormularioActivity extends AppCompatActivity {
 
             String[] arrayMontadoras = getResources().getStringArray(R.array.arrayMontadoras);
             for(int i = 1; i < arrayMontadoras.length; i++){
-                if(arrayMontadoras[i] == carro.getMontadora()){
+                if(arrayMontadoras[i].equals(carro.getMontadora())){
                     spMontadora.setSelection(i);
                 }
             }
@@ -86,10 +86,12 @@ public class FormularioActivity extends AppCompatActivity {
             finish();
 
         }else{
-            CarroDAO.inserir(carro, this);
-            etModelo.setText("");
-            spMontadora.setSelection(0);
-            spAno.setSelection(0);
+            if(acao.equals("novo")) {
+                CarroDAO.inserir(carro, this);
+                etModelo.setText("");
+                spMontadora.setSelection(0);
+                spAno.setSelection(0);
+            }
         }
     }
 }
